@@ -1,5 +1,5 @@
 # 420103
-Repo pour travailler sur le cours de professions informatiques à plusieurs.
+Repo pour travailler sur le cours Introduction à la programmation WEB
 
 Le site pour le cours se trouve à l'adresse suivante:
-http://jorisdeguet.github.io/420103/
+http://jmnadeau.github.io/420Z03/

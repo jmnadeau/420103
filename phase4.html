@@ -46,25 +46,17 @@
     <div class="row">
       <div class="">
         <h3>But de la phase 4</h3>
-        <div class="col-xs-4 alert">
-          <strong>Bootstrap</strong>
+        <div class="col-xs-6 alert">
+          <strong>JavaScript</strong>
           <p>
-            Nous allons apprendre à utiliser Bootstrap pour créer des pages web.
+            Nous allons apprendre la logique de base de programmation à l'aide de JavaScript.
           </p>
 
         </div>
-        <div class="col-xs-4 alert ">
-          <strong>Tableaux</strong>
+        <div class="col-xs-6 alert">
+          <strong>jQuery</strong>
           <p>
-            Vous mettrez en oeuvre la notion de tableau HTML en reproduisant la
-            grille de cours de la voie de sortie que vous pensez emprunter.
-          </p>
-        </div>
-        <div class="col-xs-4 alert ">
-          <strong>Formulaire</strong>
-          <p>
-            Vous allez créer un formulaire qui permettra de vous envoyer un courriel
-            depuis votre page.
+            Vous allez utiliser jQuery vous faire des modifications dynamique sur la page
           </p>
         </div>
       </div>
@@ -72,151 +64,162 @@
     <div class="row well">
       <div class="">
         <h3>
-          <span class="label label-success">2 points</span>
-          Debut de la page <strong>formation.html</strong>
+          <span class="label label-success">3 points</span>
+          Debut de la page <strong>musique.html</strong>
         </h3>
         <div class="col-xs-6 alert ">
-          <strong>Barre de navigation Bootstrap</strong>
+          <strong>Récupérer les fichiers de départ</strong>
           <p>
-            Après avoir créé le fichier formation.html, vous devez y insérer les éléments
-            nécessaires pour utiliser bootstrap.
+            <strong><a href="Phase%204%20-%20Depart.zip" class="btn btn-primary btn-xs">Télécharger les fichiers de départ</a></strong>
+          </p>
+          <p>
+              Une fois les fichiers téléchargés, extraire les fichiers dans votre projet.
           </p>
           <p>
             Intégrer une barre de navigation Bootstrap avec comme titre "Nom prénom : Ma formation"
             dans la partie droite de la barre ajouter un lien pour chaque page du site
-            (accueil, entreprise, formation et contact)
+            (accueil, entreprise, musique et contact)
           </p>
+            <p>
+                Ajouter à la page les scripts jQuery et p4.js.
+            </p>
         </div>
 
         <div class="col-xs-6 alert alert-info">
           <strong>Pointage</strong>
           <ul>
-            <li><span class="label label-success">1 point</span> titre correct</li>
-            <li><span class="label label-success">1 point</span> liens fonctionnels</li>
+              <li><span class="label label-success">1 point</span> page inclus au projet</li>
+              <li><span class="label label-success">1 point</span> barre de navigation Bootstrap</li>
+              <li><span class="label label-success">1 point</span> inclure les fichiers JS à la page</li>
           </ul>
         </div>
-        <div class="col-xs-12 alert alert-danger">
-          <strong>Copie d'écran</strong>
-          <img src="img/phase4-navbar.png" style="width:100%;"/>
+          <div class="col-xs-12 alert alert-danger">
+          <strong>Copie d'écran de la version finale</strong>
+          <img src="img/phase4.png" style="width:100%;"/>
         </div>
-
       </div>
     </div>
     <div class="row well">
       <div class="">
         <h3>
-          <span class="label label-success">12 points</span>
-          Contenu de la page <strong>formation.html</strong>
+          <span class="label label-success">4 points</span>
+          Contenu du caroussel
         </h3>
         <div class="col-xs-6 alert ">
-          <strong>Formation collégiale</strong>
+          <strong>Contenu</strong>
           <p>
-            Vous devez reproduire un tableau représentant les cours de la voie de sortie de
-            la technique que vous avez choisie.
+            Vous devez créer des miniatures pour chaque artiste présent dans le fichier p4.js.
+            Bien entendu, il est conseillé de changer le contenu de p4.js pour plutôt y ajouter vos artistes favoris!
+            Chaque miniature est composée du code HTML suivant:
           </p>
+            <pre>
+      &lt;div class="tile card"&gt;
+          &lt;div class="tile__media"&gt;
+              &lt;img class="tile__img" src="image_de_lartiste" alt=""&gt;
+          &lt;/div&gt;
+          &lt;div class="tile__details"&gt;
+              &lt;div class="tile__title"&gt;Nom de l'artiste&lt;/div&gt;
+          &lt;/div&gt;
+      &lt;/div&gt;
+              </pre>
+          <strong>Dynamiser le contenu</strong>
           <p>
-            Les cellules de la dernière colonne doivent occuper 2 lignes.
+              Dans le fichier p4.js, vous devez faire une boucle pour ajouter au <strong>div</strong> avec la classe <strong>row__inner </strong> tous les miniatures à partir de le variable <strong>liste_musique </strong> que vous aurez modifiez pour mettre votre musique favorite!
           </p>
-          <p>
-            Vous devez attribuer les mêmes couleurs au cours du même type (programmation, CISCO etc.).
-            Les entêtes du tableau doivent être en clair sur fond foncé.
-            Vous devez également écrire les règles de styles appropriées pour les bordures et les espacements.
-          </p>
-          <strong>Formation universitaire</strong>
-          <p>
-            Vous devez produire 2 paragraphes (entre 50 et 80 mots chacun) décrivant :
-          </p>
-          <ul>
-            <li>votre université </li>
-            <li>votre programme d'études</li>
-          </ul>
-          <p>Vous devrez également intégrer des liens fonctionnels.</p>
         </div>
 
         <div class="col-xs-6 alert alert-info">
           <strong>Pointage</strong>
           <ul>
-            <li>
-              Formation collégiale:
-              <ul>
-                <li><span class="label label-success">2 points</span> pour la structure</li>
-                <li><span class="label label-success">2 points</span> pour le contenu</li>
-                <li><span class="label label-success">2 points</span> pour le style (couleurs, bordures, espacements)</li>
-              </ul>
-            </li>
-            <li>
-              Formation universitaire
-              <ul>
-                <li><span class="label label-success">2 points</span> pour le français</li>
-                <li><span class="label label-success">2 points</span> pour le respect de la longueur</li>
-                <li><span class="label label-success">2 points</span> pour les liens</li>
-              </ul>
+            <li><span class="label label-success">2 points</span> pour avoir toutes les miniatures</li>
+            <li><span class="label label-success">2 points</span> pour que le contenusoit dynamique</li>
           </ul>
         </div>
         <div class="col-xs-12 alert alert-danger">
           <strong>Copie d'écran</strong>
-          <img src="img/phase4-formation.png" style="width:100%;"/>
+          <img src="img/caroussel.png" style="width:100%;"/>
         </div>
 
       </div>
     </div>
+
     <div class="row well">
       <div class="">
         <h3>
-          <span class="label label-success">5 points</span>
-          Page <strong>contact.html</strong> et formulaire
+          <span class="label label-success">4 points</span>
+          Détail d'un artiste
         </h3>
         <div class="col-xs-6 alert">
-          <strong>Champs et noms</strong>
+            <strong>Contenu</strong>
           <p>
-              Votre formulaire doit envoyer l'information avec la méthode POST à l'adresse
+              Vous devez ajouter un Jumbotron (classe Bootstrap).
             </p>
-            <pre>https://103.di.college-em.info/traiterFormulaire.php</pre>
+            <a href="https://getbootstrap.com/docs/3.3/components/#jumbotron" class="btn btn-primary btn-xs">Jumbotron</a>
             <p>
-                Référez-vous à la page suivante pour les éléments relatifs aux formulaires fournis par 
-                <a href="http://getbootstrap.com/css/#forms" class="btn btn-primary btn-xs">Bootstrap</a>
+                Le Jumbotron devra comprendre toutes les informations de l'artiste comprise dans le fichier p4.js (nom, biographie, image, nom de l'extrait et lien youtube).
             </p>
           <p>
-            Vous devez avoir les champs suivants (attribut <strong>name</strong> en gras)
+            De plus, vous allez devoir intégrer une vidéo YouTube
           </p>
-          <ul>
-            <li><strong>de</strong> qui correspond au courriel de la personne</li>
-            <li><strong>a</strong> champ caché pour votre courriel</li>
-            <li><strong>sujet</strong> le sujet du courriel </li>
-            <li><strong>message</strong> le message du courriel dans un textarea</li>
-          </ul>
+            <strong>Dynamiser le contenu</strong>
+            <p>
+                Lors d'un clique sur une miniature du caroussel, vous devrez changer le contenu du Jumbotron pour y placer celui de l'artiste que l'on vient de sélectionner.
+            </p>
 
         </div>
         <div class="col-xs-6 alert alert-info">
           <strong>Pointage</strong>
           <ul>
-            <li><span class="label label-success">3 points</span> action, méthode, noms et types de champs</li>
-            <li><span class="label label-success">2 points</span> apparence du formulaire</li>
+            <li><span class="label label-success">1 points</span> contenu du Jumbotron</li>
+              <li><span class="label label-success">1 points</span> video YouTube</li>
+            <li><span class="label label-success">2 points</span> dynamiser le contenu</li>
+          </ul>
+        </div>
+        <div class="col-xs-12 alert alert-danger">
+          <strong>Copie d'écran jumbotron</strong>
+          <img src="img/phase4-jumbotron.png" style="width:100%;"/>
+            <strong>Copie d'écran contenu dynamique</strong>
+          <img src="img/phase4-jumbotron-dynamique.PNG" style="width:100%;"/>
+        </div>
+      </div>
+    </div>
+
+    <div class="row well">
+      <div class="">
+        <h3>
+          <span class="label label-success">4 points</span>
+          Caroussel dynamique
+        </h3>
+        <div class="col-xs-6 alert">
+          <p>
+              Faites défiler le contenu du caroussel lors d'un clique sur une des flèches.
+            </p>
+            <p>
+                Cela peut être accomplie avec un peu de créativité en modifiant la marge de gauche du div avec la classe row__inner.
+            </p>
+            <strong>Conditions d'arrêt</strong>
+          <p>
+            Vous devez arrêter le défillement lorsque les limites sont atteintes.
+          </p>
+            <ul>
+                <li>la limite gauche est 0 px</li>
+                <li>la limite droite est ((largeur + marge) * nb_elements) - largeur_de_la_page</li>
+            </ul>
+
+        </div>
+        <div class="col-xs-6 alert alert-info">
+          <strong>Pointage</strong>
+          <ul>
+            <li><span class="label label-success">2 points</span> faire défiler le caroussel</li>
+            <li><span class="label label-success">2 points</span> arrêter le défilement lorsque les limites sont atteintes</li>
           </ul>
         </div>
         <div class="col-xs-12 alert alert-danger">
           <strong>Copie d'écran</strong>
-          <img src="img/phase4-contact.png" style="width:100%;"/>
+          <img src="img/phase4-caroussel.png" style="width:100%;"/>
         </div>
       </div>
     </div>
-
-    <div class="row">
-      <div class="">
-        <div class="col-xs-12 alert alert-danger">
-          <h1>
-            <span class="glyphicon glyphicon-warning-sign" aria-hidden="true"></span>
-            <span class="glyphicon glyphicon-warning-sign" aria-hidden="true"></span>
-            <span class="glyphicon glyphicon-warning-sign" aria-hidden="true"></span>
-            <span class="glyphicon glyphicon-warning-sign" aria-hidden="true"></span>
-          </h1>
-          <h1>Mauvaise indentation = <span class="label label-danger">note de 0</span></h1>
-          <h1>HTML invalide = <span class="label label-danger">note de 0</span></h1>
-        </div>
-
-      </div>
-    </div>
-
 
   </div>
 
